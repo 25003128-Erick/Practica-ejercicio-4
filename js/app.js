@@ -23,7 +23,7 @@ function guardarAuditoria() {
     const mDefec = Number(mtsDefecto.value);
 
     if (mDefec > mTotal)
-        return alert("Los metros defectuosos no pueden superar los metros totales");
+        return alert("Hay más defectuosos que totales");
 
     const rollos = obtenerRollos();
     const nuevoRollo = new RolloAuditado(id, mTotal, mDefec);
